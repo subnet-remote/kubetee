@@ -7,9 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "biome check",
-    "format": "biome format --write"
+    "format": "biome format --write",
+    "dashboard:data": "node scripts/fetch-dashboard-data.mjs",
+    "dashboard:check": "node scripts/check-dashboard-data.mjs"
   },
   "dependencies": {
+    "animejs": "^4.5.0",
     "next": "16.4.3",
     "react": "19.3.0",
     "react-dom": "19.3.0"
